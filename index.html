@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belajar HTMl</title>
+</head>
+<body>
+<h1>
+  Formulir Pendaftaran
+</h1>
+<form method="post">
+  <label for="cari">Cari Data :</label><br>
+  <input type="search" name="cari" placeholder="Cari disini">
+  <br>
+  <label for="nama">Nama Lengkap :</label><br>
+  <input type="text" name="nama" placeholder="Nama Lengkap" oninvalid="setCustomValidity('Mohon isi Nama anda');" oninput="setCustomValidity('');" required>
+  <br>
+  <label for="web">Alamat Website :</label><br>
+  <input type="url" name="web" value="https://" placeholder="Alamat Website" oninvalid="setCustomValidity('Mohon isi Web anda dengan benar');" oninput="setCustomValidity('');" required>
+  <br>
+  <label for="umur">Nama Lengkap :</label><br>
+  <input type="number" name="umur" placeholder="Umur" min="10" max="35" oninvalid="setCustomValidity('Mohon isi Umur anda');" oninput="setCustomValidity('');" required>
+  <br>
+  <label for="number">No Hp :</label><br>
+  <input type="tel" name="number" placeholder="Nomor Hp" oninvalid="setCustomValidity('Mohon isi Nomor anda');" oninput="setCustomValidity('');" pattern="[0-9]{11,14}" required>
+  <br>
+  Seberapa mengerti Anda tentang materi ini? <input type="range" name="paham">
+  <br>
+  <input type="submit" name="simpan" value="Submit">
+</form>
+</body>
+</html>
